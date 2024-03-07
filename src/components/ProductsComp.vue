@@ -105,7 +105,7 @@
   }
   
   .column5 {
-    background-image: url('https://i.ibb.co/98kc9Qp/Screenshot-20240303-160521-Yahoo-Mail.jpg');
+    background-image: url('https://i.ibb.co/QnmQn6j/Whats-App-Image-2024-02-23-at-08-12-59-1.jpg');
     background-position: center;
     background-size: cover;
   }

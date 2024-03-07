@@ -17,8 +17,8 @@ export default {
   components: {
     NavBarComp,
     heroComp,
-    ProductsComp,
-    FooterComp
+   ProductsComp,
+   FooterComp,
   },
  
 };
