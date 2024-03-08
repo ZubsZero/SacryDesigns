@@ -58,7 +58,7 @@
       <div class="line3">.</div>
       <div class="line4">.</div>
       <div class="line5">.</div>
-      <h3 class="h1">Welcome to Sacry Design, Your African Connection</h3>
+      <h3 class="h1">Sacry Design “African Handmade Collection” </h3>
       <div class="line7">.</div>
       <div class="line8">.</div>
       <div class="line9">.</div>
@@ -88,7 +88,7 @@
     background-color: black;
     height: 5rem;
     display: flex;
-    gap: 6.7rem;
+    gap: 7.5rem;
   }
   
   .h1 {
@@ -97,6 +97,7 @@
     color: goldenrod;
     font-size: 1.5rem;
     padding-top: 1.5rem;
+    padding-left:1rem ;
   }
   
 

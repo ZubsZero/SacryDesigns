@@ -5,8 +5,8 @@
         <div class="line4">.</div>
         <div class="line5">.</div>
         <nav class="nav">
-            <router-link to="#" class="route">Home</router-link>
-            <router-link to="#" class="route">About Us</router-link>
+            <router-link to="/" class="route">Home</router-link>
+            <router-link to="/about" class="route">About Us</router-link>
             <router-link to="#" class="route">Africa Fashion</router-link>
             <router-link to="#" class="route">Africa Jewelry</router-link>
             <router-link to="#" class="route">Africa Art</router-link>
@@ -14,6 +14,8 @@
             <router-link to="#" class="route">Handcraft</router-link>
             <router-link to="#" class="route">Coming Soon</router-link>
             <router-link to="#" class="route">Contact Us</router-link>
+            <router-link to="#" class="route">T's and C's</router-link>
+
         </nav>
         <div class="line7">.</div>
         <div class="line8">.</div>
@@ -34,7 +36,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 4.3rem;
+    gap: 3.8rem;
 }
 
 .route {

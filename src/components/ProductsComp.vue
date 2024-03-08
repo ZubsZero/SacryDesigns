@@ -81,7 +81,7 @@
   }
   
   .column1 {
-    background-image: url('https://i.ibb.co/98kc9Qp/Screenshot-20240303-160521-Yahoo-Mail.jpg');
+    background-image: url('https://i.ibb.co/sQD9R0K/Screenshot-20240303-160521-Yahoo-Mail.jpg');
     background-position: center;
     background-size: cover;
   }
@@ -93,7 +93,7 @@
   }
   
   .column3 {
-    background-image: url('https://i.ibb.co/F4M8Zhh/Whats-App-Image-2024-02-23-at-08-12-51.jpg');
+    background-image: url('https://i.ibb.co/9rFmWD4/Whats-App-Image-2024-02-23-at-08-12-51.jpg');
     background-position: center;
     background-size: cover;
   }
