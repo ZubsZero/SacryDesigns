@@ -17,19 +17,16 @@
       <div class="card">
         <img src="https://i.ibb.co/RBZpBT4/Whats-App-Image-2024-02-23-at-08-12-58.jpg" alt="Card Image" />
         <div class="card-overlay">
-          <button class="card-button">View Details</button>
         </div>
       </div>
       <div class="card">
         <img src="https://i.ibb.co/mTbg6FJ/Whats-App-Image-2024-02-23-at-08-12-59-1.jpg" alt="Card Image" />
         <div class="card-overlay">
-          <button class="card-button">View Details</button>
         </div>
       </div>
       <div class="card">
         <img src="https://i.ibb.co/876r4h6/Whats-App-Image-2024-02-23-at-08-12-59-2.jpg" alt="Card Image" />
         <div class="card-overlay">
-          <button class="card-button">View Details</button>
         </div>
       </div>
     </div>
@@ -129,8 +126,8 @@ export default {
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 20px;
+  height: 100vh;
 }
-
 .card {
   width: 200px;
   height: 250px;

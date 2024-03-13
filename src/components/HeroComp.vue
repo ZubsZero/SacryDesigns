@@ -11,36 +11,32 @@
         <div class="carousel-item active">
           <img src="https://i.ibb.co/PgD79NC/06.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
+            <h5>Decor</h5>
+         
           </div>
         </div>
         <div class="carousel-item">
           <img src="https://i.ibb.co/KqhXtGn/Whats-App-Image-01.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
+            <h5>Art</h5>
           </div>
         </div>
         <div class="carousel-item">
           <img src="https://i.ibb.co/YTmbrkj/Whats-App-Image-02.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
+            <h5>jewelry</h5>
           </div>
         </div>
         <div class="carousel-item">
           <img src="https://i.ibb.co/VjcJWfL/Screenshot-20240303-160521-Yahoo-Mail.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Fourth slide label</h5>
-            <p>Some representative placeholder content for the fourth slide.</p>
+            <h5>Hand crafted</h5>
           </div>
         </div>
         <div class="carousel-item">
           <img src="https://i.ibb.co/Y7LRDyQ/Screenshot-20240303-160359-Yahoo-Mail.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Fifth slide label</h5>
-            <p>Some representative placeholder content for the fifth slide.</p>
+            <h5>Fashion</h5>
           </div>
         </div>
       </div>

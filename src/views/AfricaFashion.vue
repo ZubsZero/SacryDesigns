@@ -13,71 +13,56 @@
       <div class="line10">.</div>
     </div>
     <div class="card-container">
-      <!-- First Row -->
-      <div class="card">
-        <img src="https://i.ibb.co/8dSwH8j/Screenshot-20240304-095142-Yahoo-Mail.jpg" alt="Card Image" />
+      <div v-for="(card, index) in cards" :key="index" class="card">
+        <img :src="card.imageSrc" alt="Card Image" @click="openModal(card.imageSrc)" />
         <div class="card-overlay">
-          <button class="card-button">View Details</button>
-        </div>
-      </div>
-      <div class="card">
-        <img src="https://i.ibb.co/mFcvsJV/Screenshot-20240304-095123-Yahoo-Mail.jpg" alt="Card Image" />
-        <div class="card-overlay">
-          <button class="card-button">View Details</button>
-        </div>
-      </div>
-      <div class="card">
-        <img src="https://i.ibb.co/Bfb8TTM/Screenshot-20240303-160521-Yahoo-Mail.jpg" alt="Card Image" />
-        <div class="card-overlay">
-          <button class="card-button">View Details</button>
-        </div>
-      </div>
-      <div class="card">
-        <img src="https://i.ibb.co/jGSTLtR/Screenshot-20240303-160643-Yahoo-Mail.jpg" alt="Card Image" />
-        <div class="card-overlay">
-          <button class="card-button">View Details</button>
-        </div>
-      </div>
-      <!-- Second Row -->
-      <div class="card">
-        <img src="https://i.ibb.co/2KVkbk0/Screenshot-20240304-095215-Yahoo-Mail.jpg" alt="Card Image" />
-        <div class="card-overlay">
-          <button class="card-button">View Details</button>
-        </div>
-      </div>
-      <div class="card">
-        <img src="https://i.ibb.co/wg7mqSq/Screenshot-20240304-095237-Yahoo-Mail.jpg" alt="Card Image" />
-        <div class="card-overlay">
-          <button class="card-button">View Details</button>
-        </div>
-      </div>
-      <div class="card">
-        <img src="https://i.ibb.co/z8Zj03c/Screenshot-20240303-160418-Yahoo-Mail.jpg" alt="Card Image" />
-        <div class="card-overlay">
-          <button class="card-button">View Details</button>
+          <button class="card-button" @click="openModal(card.imageSrc)">View Details</button>
         </div>
       </div>
     </div>
+    <ModalImage v-if="isModalOpen" :image-source="selectedImage" @close="closeModal" />
   </div>
 </template>
 
 <script>
 import NavBarComp from "@/components/NavBarComp.vue";
+import ModalImage from "@/components/ModalImage.vue";
 
 export default {
   name: "HomeView",
   components: {
     NavBarComp,
+    ModalImage,
+  },
+  data() {
+    return {
+      isModalOpen: false,
+      selectedImage: "",
+      cards: [
+        { imageSrc: "https://i.ibb.co/8dSwH8j/Screenshot-20240304-095142-Yahoo-Mail.jpg" },
+        { imageSrc: "https://i.ibb.co/mFcvsJV/Screenshot-20240304-095123-Yahoo-Mail.jpg" },
+        { imageSrc: "https://i.ibb.co/Bfb8TTM/Screenshot-20240303-160521-Yahoo-Mail.jpg" },
+        { imageSrc: "https://i.ibb.co/jGSTLtR/Screenshot-20240303-160643-Yahoo-Mail.jpg" },
+        { imageSrc: "https://i.ibb.co/2KVkbk0/Screenshot-20240304-095215-Yahoo-Mail.jpg" },
+        { imageSrc: "https://i.ibb.co/wg7mqSq/Screenshot-20240304-095237-Yahoo-Mail.jpg" },
+        { imageSrc: "https://i.ibb.co/z8Zj03c/Screenshot-20240303-160418-Yahoo-Mail.jpg" },
+      ],
+    };
+  },
+  methods: {
+    openModal(imageSrc) {
+      this.selectedImage = imageSrc;
+      this.isModalOpen = true;
+    },
+    closeModal() {
+      this.isModalOpen = false;
+      this.selectedImage = "";
+    },
   },
 };
 </script>
 
 <style scoped>
-.row {
-  display: flex;
-  width: 100%;
-}
-
 .section1 {
   background-color: black;
   height: 5rem;
@@ -93,61 +78,8 @@ export default {
   padding-top: 1.5rem;
 }
 
-.line2 {
-  border-right: 1px solid blue;
-  color: black;
-  rotate: -30deg;
-  height: 5.5rem;
-}
 
-.line3 {
-  border-right: 1px solid red;
-  color: black;
-  rotate: -30deg;
-  height: 5.5rem;
-}
-
-.line4 {
-  border-right: 1px solid white;
-  color: black;
-  rotate: -30deg;
-  height: 5.5rem;
-}
-
-.line5 {
-  border-right: 1px solid green;
-  color: black;
-  rotate: -30deg;
-  height: 5.5rem;
-}
-
-.line7 {
-  border-right: 1px solid green;
-  color: black;
-  rotate: 30deg;
-  height: 5.4rem;
-}
-
-.line8 {
-  border-right: 1px solid white;
-  color: black;
-  rotate: 30deg;
-  height: 5.4rem;
-}
-
-.line9 {
-  border-right: 1px solid red;
-  color: black;
-  rotate: 30deg;
-  height: 5.4rem;
-}
-
-.line10 {
-  border-right: 1px solid blue;
-  color: black;
-  rotate: 30deg;
-  height: 5.4rem;
-}
+.
 
 .card-container {
   display: flex;

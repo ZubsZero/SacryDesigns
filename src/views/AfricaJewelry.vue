@@ -17,125 +17,105 @@
       <div class="card">
         <img src="https://i.ibb.co/z2xxY0K/01.jpg" alt="Card Image" />
         <div class="card-overlay">
-          <button class="card-button">View Details</button>
         </div>
       </div>
       <div class="card">
         <img src="https://i.ibb.co/JsPpHyk/Screenshot-20240303-071607-Yahoo-Mail.jpg" alt="Card Image" />
         <div class="card-overlay">
-          <button class="card-button">View Details</button>
         </div>
       </div>
       <div class="card">
         <img src="https://i.ibb.co/fQRD3rg/Screenshot-20240303-071627-Yahoo-Mail.jpg" alt="Card Image" />
         <div class="card-overlay">
-          <button class="card-button">View Details</button>
         </div>
       </div>
       <div class="card">
         <img src="https://i.ibb.co/bs8FPdy/Screenshot-20240303-071750-Yahoo-Mail.jpg" alt="Card Image" />
         <div class="card-overlay">
-          <button class="card-button">View Details</button>
         </div>
       </div>
       <!-- Second Row -->
       <div class="card">
         <img src="https://i.ibb.co/cw938tJ/Screenshot-20240303-160359-Yahoo-Mail.jpg" alt="Card Image" />
         <div class="card-overlay">
-          <button class="card-button">View Details</button>
         </div>
       </div>
       <div class="card">
         <img src="https://i.ibb.co/pz9q4xg/Screenshot-20240304-095311-Yahoo-Mail.jpg" alt="Card Image" />
         <div class="card-overlay">
-          <button class="card-button">View Details</button>
         </div>
       </div>
       <div class="card">
         <img src="https://i.ibb.co/312361B/Screenshot-20240304-095349-Yahoo-Mail.jpg" alt="Card Image" />
         <div class="card-overlay">
-          <button class="card-button">View Details</button>
         </div>
       </div>
       <div class="card">
         <img src="https://i.ibb.co/LxDQvmJ/Whats-App-Image-2024-02-23-at-08-12-54-1.jpg" alt="Card Image" />
         <div class="card-overlay">
-          <button class="card-button">View Details</button>
         </div>
       </div>
       <!-- Third Row -->
       <div class="card">
         <img src="https://i.ibb.co/N1NSMpj/Whats-App-Image-2024-02-23-at-08-12-54-3.jpg" alt="Card Image" />
         <div class="card-overlay">
-          <button class="card-button">View Details</button>
         </div>
       </div>
       <div class="card">
         <img src="https://i.ibb.co/DK6m02L/Whats-App-Image-2024-02-23-at-08-12-55-1.jpg" alt="Card Image" />
         <div class="card-overlay">
-          <button class="card-button">View Details</button>
         </div>
       </div>
       <div class="card">
         <img src="https://i.ibb.co/pPXbhwm/Whats-App-Image-2024-02-23-at-08-12-55-3.jpg" alt="Card Image" />
         <div class="card-overlay">
-          <button class="card-button">View Details</button>
         </div>
       </div>
       <div class="card">
         <img src="https://i.ibb.co/BCBvmG6/Whats-App-Image-2024-02-23-at-08-12-57-2.jpg" alt="Card Image" />
         <div class="card-overlay">
-          <button class="card-button">View Details</button>
         </div>
       </div>
       <!-- Fourth Row -->
       <div class="card">
         <img src="https://i.ibb.co/r7X5tn4/Whats-App-Image-2024-02-23-at-08-16-37-1.jpg" alt="Card Image" />
         <div class="card-overlay">
-          <button class="card-button">View Details</button>
         </div>
       </div>
       <div class="card">
         <img src="https://i.ibb.co/Prmjzfk/Whats-App-Image-2024-02-23-at-08-16-37-2.jpg" alt="Card Image" />
         <div class="card-overlay">
-          <button class="card-button">View Details</button>
         </div>
       </div>
       <div class="card">
         <img src="https://i.ibb.co/nRL7ygv/Whats-App-Image-2024-02-23-at-08-16-38.jpg" alt="Card Image" />
         <div class="card-overlay">
-          <button class="card-button">View Details</button>
         </div>
       </div>
       <div class="card">
         <img src="https://i.ibb.co/Gvttycm/Whats-App-Image-2024-02-23-at-08-16-39-1.jpg" alt="Card Image" />
         <div class="card-overlay">
-          <button class="card-button">View Details</button>
         </div>
       </div>
       <!-- Fifth Row -->
       <div class="card">
         <img src="https://i.ibb.co/W26W8R5/Whats-App-Image-2024-02-23-at-08-16-39-2.jpg" alt="Card Image" />
         <div class="card-overlay">
-          <button class="card-button">View Details</button>
         </div>
       </div>
       <div class="card">
         <img src="https://i.ibb.co/Kcvn5Vc/Whats-App-Image-2024-02-23-at-08-16-39.jpg" alt="Card Image" />
         <div class="card-overlay">
-          <button class="card-button">View Details</button>
         </div>
       </div>
       <div class="card">
         <img src="https://i.ibb.co/WkHRD0g/Whats-App-Image-2024-02-23-at-08-16-40-1.jpg" alt="Card Image" />
         <div class="card-overlay">
-          <button class="card-button">View Details</button>
         </div>
       </div>
       <div class="card">
         <img src="https://i.ibb.co/PgKrQ51/Whats-App-Image-2024-02-23-at-08-16-41-1.jpg" alt="Card Image" />
         <div class="card-overlay">
-          <button class="card-button">View Details</button>
         </div>
       </div>
     </div>
@@ -274,18 +254,5 @@ export default {
   opacity: 1;
 }
 
-.card-button {
-  background-color: transparent;
-  border: 2px solid white;
-  color: white;
-  padding: 10px 20px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
-}
 
-.card-button:hover {
-  background-color: white;
-  color: black;
-}
 </style>

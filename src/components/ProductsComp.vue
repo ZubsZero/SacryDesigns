@@ -9,6 +9,7 @@
         <li>Fabrics</li>
         <li>Bags, Hats, Scarves and Wraps(pagnes)</li>
         <li>Other</li>
+        <router-link to="/fashion"><button class="card-button">Show Products</button></router-link>
       </ul>
     </div>
     <div class="column2">
@@ -22,6 +23,8 @@
         <li>Wood Jewelry</li>
         <li>Collection Jewelry</li>
         <li>Other</li>
+        <router-link to="/jewelry"><button class="card-button">Show Products</button></router-link>
+
       </ul>
     </div>
     <div class="column3">
@@ -33,6 +36,7 @@
         <li>Fabrics</li>
         <li>Bags, Hats, Scarves and Wraps(pagnes)</li>
         <li>Other</li>
+        <router-link to="/art"><button class="card-button">Show Products</button></router-link>
       </ul>
     </div>
     <div class="column4">
@@ -46,6 +50,8 @@
         <li>Decorative Accessories</li>
         <li>Mirrors</li>
         <li>Other</li>
+        <router-link to="/decor"><button class="card-button">Show Products</button></router-link>
+
       </ul>
     </div>
     <div class="column5">
@@ -55,6 +61,8 @@
         <li>Market Baskets</li>
         <li>Trinkets</li>
         <li>Other</li>
+        <router-link to="/handcraft"><button class="card-button">Show Products</button></router-link>
+
       </ul>
     </div>
   </div>
@@ -68,7 +76,7 @@
 .text {
   display: none;
   position: absolute;
-  top: 35%;
+  top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: rgb(255, 255, 255);
@@ -85,7 +93,7 @@
 .text-list-5 {
   display: none;
   position: absolute;
-  top: 70%; /* Adjusted positioning */
+  top: 60%; /* Adjusted positioning */
   left: 50%;
   transform: translate(-50%, -50%);
   color: rgb(255, 255, 255);
@@ -187,5 +195,21 @@
   background-image: url("https://i.ibb.co/QnmQn6j/Whats-App-Image-2024-02-23-at-08-12-59-1.jpg");
   background-position: center;
   background-size: cover;
+}
+
+.card-button {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: 2rem;
+}
+
+.card-button:hover {
+  background-color: white;
+  color: black;
 }
 </style>

@@ -1,7 +1,19 @@
 <template>
   
   <router-view/>
+  <footercomp/>
 </template>
+<script>
+import footercomp from './components/footerComp.vue'
+
+export default {
+  name: "App",
+  components: {
+    footercomp
+  }
+}
+
+</script>
 
 <style>
 #app {

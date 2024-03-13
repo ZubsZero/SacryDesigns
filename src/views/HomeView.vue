@@ -2,7 +2,6 @@
 <NavBarComp/>
 <heroComp/>
 <ProductsComp/>
-<FooterComp/>
 
 </template>
 
@@ -10,7 +9,6 @@
 import NavBarComp from "@/components/NavBarComp.vue";
 import heroComp from "@/components/HeroComp.vue";
 import ProductsComp from "@/components/ProductsComp.vue";
-import FooterComp from '@/components/footerComp.vue'
 
 export default {
   name: "HomeView",
@@ -18,7 +16,7 @@ export default {
     NavBarComp,
     heroComp,
    ProductsComp,
-   FooterComp,
+  
   },
  
 };

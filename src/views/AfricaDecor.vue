@@ -17,50 +17,42 @@
       <div class="card">
         <img src="https://i.ibb.co/DMf975w/05.jpg" alt="Card Image" />
         <div class="card-overlay">
-          <button class="card-button">View Details</button>
         </div>
       </div>
       <div class="card">
         <img src="https://i.ibb.co/kg0zMTD/06.jpg" alt="Card Image" />
         <div class="card-overlay">
-          <button class="card-button">View Details</button>
         </div>
       </div>
       <div class="card">
         <img src="https://i.ibb.co/y036RPK/Screenshot-20240303-071535-Yahoo-Mail.jpg" alt="Card Image" />
         <div class="card-overlay">
-          <button class="card-button">View Details</button>
         </div>
       </div>
       <div class="card">
         <img src="https://i.ibb.co/TTzTXgs/Screenshot-20240303-071719-Yahoo-Mail.jpg" alt="Card Image" />
         <div class="card-overlay">
-          <button class="card-button">View Details</button>
         </div>
       </div>
       <!-- Second Row -->
       <div class="card">
         <img src="https://i.ibb.co/4pBTSxn/Whats-App-Image-2024-02-23-at-08-12-56.jpg" alt="Card Image" />
         <div class="card-overlay">
-          <button class="card-button">View Details</button>
         </div>
       </div>
       <div class="card">
         <img src="https://i.ibb.co/LzbhZFb/Whats-App-Image-2024-02-23-at-08-16-37.jpg" alt="Card Image" />
         <div class="card-overlay">
-          <button class="card-button">View Details</button>
         </div>
       </div>
       <div class="card">
         <img src="https://i.ibb.co/wSpcRSy/Whats-App-Image-2024-02-23-at-08-16-41-2.jpg" alt="Card Image" />
         <div class="card-overlay">
-          <button class="card-button">View Details</button>
         </div>
       </div>
       <div class="card">
         <img src="https://i.ibb.co/W5GKRVF/Whats-App-Image-2024-02-23-at-08-16-41-3.jpg" alt="Card Image" />
         <div class="card-overlay">
-          <button class="card-button">View Details</button>
         </div>
       </div>
     </div>
@@ -89,6 +81,7 @@ export default {
   height: 5rem;
   display: flex;
   gap: 9.5rem;
+  
 }
 
 .h1 {
@@ -199,18 +192,5 @@ export default {
   opacity: 1;
 }
 
-.card-button {
-  background-color: transparent;
-  border: 2px solid white;
-  color: white;
-  padding: 10px 20px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
-}
 
-.card-button:hover {
-  background-color: white;
-  color: black;
-}
 </style>
