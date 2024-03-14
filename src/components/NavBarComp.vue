@@ -1,9 +1,5 @@
 <template>
        <div class="Navbar">
-        <div class="line2">.</div>
-        <div class="line3">.</div>
-        <div class="line4">.</div>
-        <div class="line5">.</div>
         <nav class="nav">
             <router-link to="/" class="route">Home</router-link>
             <router-link to="/about" class="route">About Us</router-link>
@@ -17,10 +13,7 @@
             <router-link to="/terms" class="route">T's and C's</router-link>
 
         </nav>
-        <div class="line7">.</div>
-        <div class="line8">.</div>
-        <div class="line9">.</div>
-        <div class="line10">.</div>
+      
     </div>
 </template>
 <script>
