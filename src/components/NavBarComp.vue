@@ -30,6 +30,8 @@ body {
     padding: 0;
     display: flex;
     gap: 3.8rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .route {
