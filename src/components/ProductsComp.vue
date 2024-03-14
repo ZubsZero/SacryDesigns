@@ -1,8 +1,8 @@
 <template>
   <div class="columns">
-    <div class="column1">
+    <div class="column column1">
       <h3 class="text">African Fashion</h3>
-      <ul class="text-list-1">
+      <ul class="text-list">
         <li>Women</li>
         <li>Men</li>
         <li>Kids</li>
@@ -12,9 +12,9 @@
         <router-link to="/fashion"><button class="card-button">Show Products</button></router-link>
       </ul>
     </div>
-    <div class="column2">
+    <div class="column column2">
       <h3 class="text">African Jewelry</h3>
-      <ul class="text-list-2">
+      <ul class="text-list">
         <li>Necklaces</li>
         <li>Earrings</li>
         <li>Bracelets and bangles</li>
@@ -24,12 +24,11 @@
         <li>Collection Jewelry</li>
         <li>Other</li>
         <router-link to="/jewelry"><button class="card-button">Show Products</button></router-link>
-
       </ul>
     </div>
-    <div class="column3">
+    <div class="column column3">
       <h3 class="text">African Art</h3>
-      <ul class="text-list-3">
+      <ul class="text-list">
         <li>Women</li>
         <li>Men</li>
         <li>Kids</li>
@@ -39,9 +38,9 @@
         <router-link to="/art"><button class="card-button">Show Products</button></router-link>
       </ul>
     </div>
-    <div class="column4">
+    <div class="column column4">
       <h3 class="text">Home Décor</h3>
-      <ul class="text-list-4">
+      <ul class="text-list">
         <li>Pillows and Throws</li>
         <li>Wall Art and ornament</li>
         <li>Dinning</li>
@@ -51,18 +50,16 @@
         <li>Mirrors</li>
         <li>Other</li>
         <router-link to="/decor"><button class="card-button">Show Products</button></router-link>
-
       </ul>
     </div>
-    <div class="column5">
+    <div class="column column5">
       <h3 class="text">HandCraft</h3>
-      <ul class="text-list-5">
+      <ul class="text-list">
         <li>Basket</li>
         <li>Market Baskets</li>
         <li>Trinkets</li>
         <li>Other</li>
         <router-link to="/handcraft"><button class="card-button">Show Products</button></router-link>
-
       </ul>
     </div>
   </div>
@@ -71,12 +68,27 @@
 <style scoped>
 .columns {
   display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.column {
+  width: 100%;
+  max-width: 300px; /* Adjust as needed */
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
 }
 
 .text {
   display: none;
   position: absolute;
-  top: 15%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: rgb(255, 255, 255);
@@ -86,14 +98,10 @@
   z-index: 2;
 }
 
-.text-list-1,
-.text-list-2,
-.text-list-3,
-.text-list-4,
-.text-list-5 {
+.text-list {
   display: none;
   position: absolute;
-  top: 60%; /* Adjusted positioning */
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: rgb(255, 255, 255);
@@ -102,52 +110,17 @@
   transition: opacity 0.6s;
   z-index: 2;
   list-style-type: none;
-  padding: 0; /* Remove default padding */
-  margin: 0; /* Remove default margin */
+  padding: 0;
+  margin: 0;
 }
 
-.text-list-1 li,
-.text-list-2 li,
-.text-list-3 li,
-.text-list-4 li,
-.text-list-5 li {
-  padding: 5px 0; /* Add padding to the list items */
-}
-
-.column1,
-.column2,
-.column3,
-.column4,
-.column5 {
-  width: 20rem;
-  height: 35rem;
-  position: relative;
-  overflow: hidden;
-}
-
-.column1:hover .text,
-.column2:hover .text,
-.column3:hover .text,
-.column4:hover .text,
-.column5:hover .text {
+.column:hover .text,
+.column:hover .text-list {
   display: block;
   opacity: 1;
 }
 
-.column1:hover .text-list-1,
-.column2:hover .text-list-2,
-.column3:hover .text-list-3,
-.column4:hover .text-list-4,
-.column5:hover .text-list-5 {
-  display: block;
-  opacity: 1;
-}
-
-.column1::before,
-.column2::before,
-.column3::before,
-.column4::before,
-.column5::before {
+.column::before {
   content: "";
   position: absolute;
   top: 0;
@@ -159,42 +132,8 @@
   transition: background-color 0.6s;
 }
 
-.column1:hover::before,
-.column2:hover::before,
-.column3:hover::before,
-.column4:hover::before,
-.column5:hover::before {
+.column:hover::before {
   background-color: rgba(0, 0, 0, 0.626);
-}
-
-.column1 {
-  background-image: url("https://i.ibb.co/sQD9R0K/Screenshot-20240303-160521-Yahoo-Mail.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-.column2 {
-  background-image: url("https://i.ibb.co/MDC28GS/Screenshot-20240303-160359-Yahoo-Mail.jpg");
-  background-position: center;
-  background-size: contain;
-}
-
-.column3 {
-  background-image: url("https://i.ibb.co/9rFmWD4/Whats-App-Image-2024-02-23-at-08-12-51.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-.column4 {
-  background-image: url("https://i.ibb.co/PgD79NC/06.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-.column5 {
-  background-image: url("https://i.ibb.co/QnmQn6j/Whats-App-Image-2024-02-23-at-08-12-59-1.jpg");
-  background-position: center;
-  background-size: cover;
 }
 
 .card-button {
@@ -211,5 +150,15 @@
 .card-button:hover {
   background-color: white;
   color: black;
+}
+
+@media (min-width: 768px) {
+  .columns {
+    justify-content: space-between;
+  }
+
+  .column {
+    width: calc(20% - 20px);
+  }
 }
 </style>
