@@ -159,5 +159,31 @@
     font-weight: 700;
   }
 
+  @media (max-width: 768px) {
+    .section1 {
+      height: auto;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem;
+      align-items: flex-start;
+    }
+    
+    .h1 {
+      font-size: 1.2rem;
+      padding-top: 0.5rem;
+      padding-left: 0;
+    }
+    
+    .line {
+      height: 3rem;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .section1 {
+      gap: rem;
+    }
+  }
+
   </style>
   

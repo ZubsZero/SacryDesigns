@@ -79,7 +79,7 @@ export default {
 }
 
 
-.
+
 
 .card-container {
   display: flex;
