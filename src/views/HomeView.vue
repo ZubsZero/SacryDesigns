@@ -1,21 +1,21 @@
 <template>
 <NavBarComp/>
 <heroComp/>
-<ProductsComp/>
+<productsComp/>
 
 </template>
 
 <script>
 import NavBarComp from "@/components/NavBarComp.vue";
 import heroComp from "@/components/HeroComp.vue";
-import ProductsComp from "@/components/ProductsComp.vue";
+import productsComp from "@/components/ProductsComp.vue";
 
 export default {
   name: "HomeView",
   components: {
     NavBarComp,
     heroComp,
-   ProductsComp,
+   productsComp,
   
   },
  

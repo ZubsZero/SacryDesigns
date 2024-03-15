@@ -1,8 +1,10 @@
 <template>
-    <NavBarComp/>
+  <div>
+    <NavBarComp />
+    <div class="section1">
+      <h3 class="h1">Terms and conditions</h3>
+    </div>
     <div class="terms-and-conditions">
-      <h1>TERMS AND CONDITIONS</h1>
-  
       <section>
         <h2 class="section-title">PAYMENT AND PRICING</h2>
         <div class="section-content">
@@ -20,7 +22,7 @@
           <p>Please use your order number as reference.</p>
         </div>
       </section>
-  
+
       <section>
         <h2 class="section-title">CARE AND CLEANING</h2>
         <div class="section-content">
@@ -30,7 +32,7 @@
           <p>The ribbons and fabric used in some pieces are easy to clean. Pull all the charms and beads to one side, wet the area that is soiled, squeeze a small amount of detergent into your hands and gently rub over the wet area, rinse with warm water until all the detergent has gone, take care not to get water over the remainder of the jewelry piece. Hang up to dry. If needed, iron on low heat.</p>
         </div>
       </section>
-  
+
       <section>
         <h2 class="section-title">ORDERS AND RETURNS</h2>
         <div class="section-content">
@@ -61,7 +63,7 @@
           <p>Credit card declined by the financial institution.</p>
         </div>
       </section>
-  
+
       <section>
         <h2 class="section-title">SHIPPING AND HANDLING</h2>
         <div class="section-content">
@@ -73,69 +75,85 @@
         </div>
       </section>
     </div>
-  </template>
-  
-  <script>
-  import NavBarComp from "@/components/NavBarComp.vue"
-  
-  export default {
-    name: "HomeView",
-    components: {
-      NavBarComp,
-    },
-  };
-  </script>
-  
-  <style scoped>
+  </div>
+</template>
+
+<script>
+import NavBarComp from "@/components/NavBarComp.vue";
+
+export default {
+  name: "HomeView",
+  components: {
+    NavBarComp,
+  },
+};
+</script>
+
+<style scoped>
+.section1 {
+  background-color: black;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.h1 {
+  margin: 0;
+  padding: 0;
+  color: goldenrod;
+  font-size: 1.5rem;
+}
+
+.terms-and-conditions {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.section-title {
+  font-size: 2em;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.section-content {
+  color: #000;
+}
+
+h3 {
+  font-size: 1.4em;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 5px;
+  color: #000;
+}
+
+p {
+  margin-bottom: 15px;
+  color: #000;
+}
+
+strong {
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
   .terms-and-conditions {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
   }
-  
-  .section-title {
-    font-size: 2em;
-    color: #000;
-    margin-bottom: 20px;
-  }
-  
-  .section-content {
-    color: #000;
-  }
-  
-  h3 {
-    font-size: 1.4em;
-    color: #000;
-    margin-bottom: 15px;
-  }
-  
-  ul {
-    list-style-type: disc;
-    margin-left: 20px;
-  }
-  
-  li {
-    margin-bottom: 5px;
-    color: #000;
-  }
-  
-  p {
-    margin-bottom: 15px;
-    color: #000;
-  }
-  
-  strong {
-    font-weight: bold;
-  }
-  
-  @media (min-width: 768px) {
-    .terms-and-conditions {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-column-gap: 40px;
-    }
-  }
-  </style>
-  
+}
+</style>

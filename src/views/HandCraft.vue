@@ -2,32 +2,21 @@
   <div>
     <NavBarComp />
     <div class="section1">
-      <div class="line2">.</div>
-      <div class="line3">.</div>
-      <div class="line4">.</div>
-      <div class="line5">.</div>
       <h3 class="h1">Handcrafted</h3>
-      <div class="line7">.</div>
-      <div class="line8">.</div>
-      <div class="line9">.</div>
-      <div class="line10">.</div>
     </div>
     <div class="card-container">
       <!-- First Row -->
       <div class="card">
         <img src="https://i.ibb.co/RBZpBT4/Whats-App-Image-2024-02-23-at-08-12-58.jpg" alt="Card Image" />
-        <div class="card-overlay">
-        </div>
+        <div class="card-overlay"></div>
       </div>
       <div class="card">
         <img src="https://i.ibb.co/mTbg6FJ/Whats-App-Image-2024-02-23-at-08-12-59-1.jpg" alt="Card Image" />
-        <div class="card-overlay">
-        </div>
+        <div class="card-overlay"></div>
       </div>
       <div class="card">
         <img src="https://i.ibb.co/876r4h6/Whats-App-Image-2024-02-23-at-08-12-59-2.jpg" alt="Card Image" />
-        <div class="card-overlay">
-        </div>
+        <div class="card-overlay"></div>
       </div>
     </div>
   </div>
@@ -54,7 +43,8 @@ export default {
   background-color: black;
   height: 5rem;
   display: flex;
-  gap: 9.5rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .h1 {
@@ -62,63 +52,6 @@ export default {
   padding: 0;
   color: goldenrod;
   font-size: 1.5rem;
-  padding-top: 1.5rem;
-}
-
-.line2 {
-  border-right: 1px solid blue;
-  color: black;
-  rotate: -30deg;
-  height: 5.5rem;
-}
-
-.line3 {
-  border-right: 1px solid red;
-  color: black;
-  rotate: -30deg;
-  height: 5.5rem;
-}
-
-.line4 {
-  border-right: 1px solid white;
-  color: black;
-  rotate: -30deg;
-  height: 5.5rem;
-}
-
-.line5 {
-  border-right: 1px solid green;
-  color: black;
-  rotate: -30deg;
-  height: 5.5rem;
-}
-
-.line7 {
-  border-right: 1px solid green;
-  color: black;
-  rotate: 30deg;
-  height: 5.4rem;
-}
-
-.line8 {
-  border-right: 1px solid white;
-  color: black;
-  rotate: 30deg;
-  height: 5.4rem;
-}
-
-.line9 {
-  border-right: 1px solid red;
-  color: black;
-  rotate: 30deg;
-  height: 5.4rem;
-}
-
-.line10 {
-  border-right: 1px solid blue;
-  color: black;
-  rotate: 30deg;
-  height: 5.4rem;
 }
 
 .card-container {
@@ -126,8 +59,9 @@ export default {
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 20px;
-  height: 100vh;
+  height: calc(100vh - 5rem);
 }
+
 .card {
   width: 200px;
   height: 250px;

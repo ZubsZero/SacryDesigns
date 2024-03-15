@@ -3,15 +3,9 @@
     <NavBarComp />
     <div class="container1">
       <div class="section1">
-        <div class="line2">.</div>
-        <div class="line3">.</div>
-        <div class="line4">.</div>
-        <div class="line5">.</div>
+       
         <h3 class="h1">About Us</h3>
-        <div class="line7">.</div>
-        <div class="line8">.</div>
-        <div class="line9">.</div>
-        <div class="line10">.</div>
+      
       </div>
       <div class="content">
         <div class="company-info">
@@ -73,94 +67,65 @@ export default {
 
 .section1 {
   background-color: black;
-  height: 5rem;
+  height: 10rem;
   display: flex;
-  gap: 10rem;
   justify-content: center;
   align-items: center;
+}
+
+.h1 {
+  margin: 0;
+  padding: 0;
+  color: goldenrod;
+  font-size: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.line2,
+.line3,
+.line4,
+.line5,
+.line7,
+.line8,
+.line9,
+.line10 {
   width: 100%;
-}
-
-.h1 {
-  margin: 0;
-  padding: 0;
-  color: goldenrod;
-  font-size: 1.5rem;
-  padding-top: 1.5rem;
-  text-align: center;
-}
-
-.section1 {
-  background-color: black;
-  height: 5rem;
-  display: flex;
-  gap: 9.5rem;
-}
-
-.h1 {
-  margin: 0;
-  padding: 0;
-  color: goldenrod;
-  font-size: 1.5rem;
-  padding-top: 1.5rem;
+  height: 1px;
+  background-color: white;
+  margin: 0.5rem 0;
 }
 
 .line2 {
-  border-right: 1px solid blue;
-  color: black;
-  rotate: -30deg;
-  height: 5.5rem;
+  background-color: blue;
 }
 
 .line3 {
-  border-right: 1px solid red;
-  color: black;
-  rotate: -30deg;
-  height: 5.5rem;
+  background-color: red;
 }
 
 .line4 {
-  border-right: 1px solid white;
-  color: black;
-  rotate: -30deg;
-  height: 5.5rem;
+  background-color: white;
 }
 
 .line5 {
-  border-right: 1px solid green;
-  color: black;
-  rotate: -30deg;
-  height: 5.5rem;
+  background-color: green;
 }
 
 .line7 {
-  border-right: 1px solid green;
-  color: black;
-  rotate: 30deg;
-  height: 5.4rem;
+  background-color: green;
 }
 
 .line8 {
-  border-right: 1px solid white;
-  color: black;
-  rotate: 30deg;
-  height: 5.4rem;
+  background-color: white;
 }
 
 .line9 {
-  border-right: 1px solid red;
-  color: black;
-  rotate: 30deg;
-  height: 5.4rem;
+  background-color: red;
 }
 
 .line10 {
-  border-right: 1px solid blue;
-  color: black;
-  rotate: 30deg;
-  height: 5.4rem;
+  background-color: blue;
 }
-
 
 .content {
   display: flex;
@@ -227,7 +192,23 @@ ul {
 
 @media (min-width: 768px) {
   .section1 {
-    height: auto;
+    height: 5rem;
+  }
+
+  .h1 {
+    font-size: 1.2rem;
+    padding-top: 0.5rem;
+  }
+
+  .line2,
+  .line3,
+  .line4,
+  .line5,
+  .line7,
+  .line8,
+  .line9,
+  .line10 {
+    display: none;
   }
 
   .company-info {

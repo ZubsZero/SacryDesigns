@@ -2,15 +2,9 @@
   <div>
     <NavBarComp />
     <div class="section1">
-      <div class="line2">.</div>
-      <div class="line3">.</div>
-      <div class="line4">.</div>
-      <div class="line5">.</div>
+      
       <h3 class="h1">Africa Fashion</h3>
-      <div class="line7">.</div>
-      <div class="line8">.</div>
-      <div class="line9">.</div>
-      <div class="line10">.</div>
+      
     </div>
     <div class="card-container">
       <div v-for="(card, index) in cards" :key="index" class="card">
@@ -67,7 +61,9 @@ export default {
   background-color: black;
   height: 5rem;
   display: flex;
-  gap: 9.5rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .h1 {
@@ -76,8 +72,8 @@ export default {
   color: goldenrod;
   font-size: 1.5rem;
   padding-top: 1.5rem;
+  text-align: center;
 }
-
 
 
 
@@ -86,6 +82,7 @@ export default {
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 20px;
+  height: 100vh;
 }
 
 .card {
