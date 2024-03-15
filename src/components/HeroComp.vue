@@ -52,8 +52,15 @@ export default {
           image: "https://i.ibb.co/Y7LRDyQ/Screenshot-20240303-160359-Yahoo-Mail.jpg",
           caption: "Fashion"
         }
-      ]
+      ],
+      timer: null
     };
+  },
+  mounted() {
+    this.startCarousel();
+  },
+  beforeDestroy() {
+    this.stopCarousel();
   },
   methods: {
     changeSlide(n) {
@@ -64,6 +71,17 @@ export default {
       if (this.currentIndex < 0) {
         this.currentIndex = this.carouselItems.length - 1;
       }
+    },
+    startCarousel() {
+      this.timer = setInterval(() => {
+        this.currentIndex++;
+        if (this.currentIndex >= this.carouselItems.length) {
+          this.currentIndex = 0;
+        }
+      }, 4000); // Change image every 4 seconds (4000 milliseconds)
+    },
+    stopCarousel() {
+      clearInterval(this.timer);
     }
   }
 };

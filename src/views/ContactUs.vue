@@ -12,6 +12,10 @@
         <p><strong>Address:</strong> 4804 NORSTAR BLVD APT 228 LIVERPOOL NY 13088-4286</p>
         <p><strong>Phone:</strong> +1(315)9916904</p>
         <p><strong>Email:</strong> katalay_linon@yahoo.com</p>
+                <p><strong>Second Email:</strong> sarah@sacrydesigns.com</p>
+                        <p><strong>Third Email</strong> info@sacrydesigns.com</p>
+
+
       </div>
     </div>
   </div>
