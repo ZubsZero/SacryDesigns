@@ -3,9 +3,7 @@
     <NavBarComp />
     <div class="container1">
       <div class="section1">
-       
         <h3 class="h1">About Us</h3>
-      
       </div>
       <div class="content">
         <div class="company-info">
@@ -46,6 +44,18 @@
               Sacry Design also proudly advocates women entrepreneurship by using eco-friendly African materials, and how it involves fellow entrepreneurs. It is the founder’s wishes to leave the legacy and engrave own signature for a prosperous future. A huge thank you to all who support, encourage and promote this woman-owned business. The growth and success of Sacry Design is attributed to our supporters, consumers, creators, producers, sales agents.
             </p>
           </div>
+        </div>
+        <div class="how-it-started">
+          <h3 class="h11">HOW IT ALL STARTED</h3>
+          <p>
+            It was after my graduation from ABA (Academie de Beaux Arts) in Kinshasa D.R.Congo, not able to find employment, looking at my mother sewing Congolese ladies style outfit using a variety of colorful fabric that I realized my dream of creating a handcraft, fashion, and brand that makes people look good as well as their living space.
+          </p>
+          <p>
+            As a young female African in America looking for employment in pouring rain and dark skies overhead on the street of New York without any chance of being hired, I suddenly realized that I was on my own with no one to turn to. I need to make work; I thought of my fashion and art skills. How does one even do this? Sometimes life throws you a curveball and it’s what you do with it that can change the world. It is in that moment that I thought to myself “I will get my hands dirty with arts crafts and order some fabric from my mom in D.R. Congo to get my small business off the ground” With a bit of passion and purpose, I did! The art of embracing imperfect.
+          </p>
+          <p>
+            Handmade things are often considered ugly and scary, especially if sold by someone not known in a unfamiliar environment. But African Art and Fashion, fortunately for me, tell a beautiful and unforgettable story that goes far beyond cultures and traditions. Sacry Design is a symbol of inspiration to embrace lives with all its imperfections striving to improve from ugly to beautiful.
+          </p>
         </div>
       </div>
     </div>
@@ -225,6 +235,10 @@ ul {
     width: 250px;
     height: 250px;
     margin: 0 auto 20px;
+  }
+
+  .how-it-started {
+    width: 50rem ;
   }
 }
 </style>
