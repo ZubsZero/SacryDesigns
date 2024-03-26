@@ -12,7 +12,7 @@
         <p><strong>Address:</strong> 4804 NORSTAR BLVD APT 228 LIVERPOOL NY 13088-4286</p>
         <p><strong>Phone:</strong> +1(315)9916904</p>
        <p><strong>Email:</strong><a href="mailto:sarah@sacrydesigns.com">sarah@sacrydesigns.com</a></p>
-        <p><strong>Second Email:</strong><a href="mailto:info@sacrydesigns.com">sarah@sacrydesigns.com</a></p>
+        <p><strong>Second Email:</strong><a href="mailto:info@sacrydesigns.com">info@sacrydesigns.com</a></p>
 =                       
 
 
